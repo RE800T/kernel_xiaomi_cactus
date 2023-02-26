@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python2
 # -*- coding: utf-8 -*-
 
 # Copyright (C) 2016 MediaTek Inc.
@@ -45,9 +45,7 @@ from utility.util import log
 def usage():
     print '''
 usage: DrvGen [dws_path] [file_path] [log_path] [paras]...
-
 options and arguments:
-
 dws_path    :    dws file path
 file_path   :    where you want to put generated files
 log_path    :    where to store the log files
@@ -184,4 +182,3 @@ if __name__ == '__main__':
         sys.exit(-1)
 
     sys.exit(0)
-
