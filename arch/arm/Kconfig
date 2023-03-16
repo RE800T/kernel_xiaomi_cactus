@@ -92,6 +92,7 @@ config ARM
 	select RTC_LIB
 	select SYS_SUPPORTS_APM_EMULATION
 	select ARCH_SUPPORTS_SPECULATIVE_PAGE_FAULT
+	select PGTABLE_MAPPING if ZSMALLOC && (ARM || ARM64)
 	# Above selects are sorted alphabetically; please add new ones
 	# according to that.  Thanks.
 	help
